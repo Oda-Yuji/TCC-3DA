@@ -45,7 +45,7 @@ Como instalar:
 
 - Baixe o arquivo .exe em [Composer Download -> Composer-Setup.exe](https://getcomposer.org/download/) e execute. Avance as etapas sem alterar nada até concluir.
 
-- #### Node
+#### Node
 
 - Versão: 24.14.1 (LTS)
 
