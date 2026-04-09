@@ -1,6 +1,6 @@
 # TCC-3DA
 
-Projeto de Trabalho de Conclusão de Curso PortalEtec, Etec Prof. Camargo Aranha, curso Desenvolvimento de Sistemas.
+Projeto de Trabalho de Conclusão de Curso Portal Etec, Etec Prof. Camargo Aranha, curso Desenvolvimento de Sistemas.
 
 ## Membros
 
