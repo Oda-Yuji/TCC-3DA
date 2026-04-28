@@ -18,6 +18,12 @@ Antes de mais nada, abra o PowerShell como Administrador e rode:
 
 Isso servirá para tirar qualquer impedimento padrão do Windows para a criação e desenvolvimento do projeto.
 
+## Convenções de Código
+
+#### PHP
+
+https://www.php-fig.org/psr/psr-12/
+
 ### Versões das Tecnologias
 
 #### PHP
