@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+  <!-- Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 186)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#Gradiente_Portal_Etec4);
+      }
+
+      .st1 {
+        fill: url(#Gradiente_Portal_Etec2);
+      }
+
+      .st2 {
+        fill: url(#Gradiente_Portal_Etec3);
+      }
+
+      .st3 {
+        fill: url(#Gradiente_Portal_Etec5);
+      }
+
+      .st4 {
+        fill: url(#Gradiente_Portal_Etec);
+      }
+
+      .st5 {
+        font-family: LeagueSpartan-Bold, 'League Spartan';
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .st6 {
+        fill: url(#Gradiente_Portal_Etec1);
+      }
+    </style>
+    <linearGradient id="Gradiente_Portal_Etec" data-name="Gradiente Portal Etec" x1="305" y1="227.7" x2="70.5" y2="386.3" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#15c7ff"/>
+      <stop offset="1" stop-color="#6affae"/>
+    </linearGradient>
+    <linearGradient id="Gradiente_Portal_Etec1" data-name="Gradiente Portal Etec" x1="281.4" y1="193.3" x2="46.9" y2="352" xlink:href="#Gradiente_Portal_Etec"/>
+    <linearGradient id="Gradiente_Portal_Etec2" data-name="Gradiente Portal Etec" x1="230" y1="116.9" x2="-4.4" y2="275.6" xlink:href="#Gradiente_Portal_Etec"/>
+    <linearGradient id="Gradiente_Portal_Etec3" data-name="Gradiente Portal Etec" x1="249.5" y1="145.7" x2="15" y2="304.4" xlink:href="#Gradiente_Portal_Etec"/>
+    <linearGradient id="Gradiente_Portal_Etec4" data-name="Gradiente Portal Etec" x1="210.6" y1="88.2" x2="-23.9" y2="246.8" xlink:href="#Gradiente_Portal_Etec"/>
+    <linearGradient id="Gradiente_Portal_Etec5" data-name="Gradiente Portal Etec" x1="280" y1="190.8" x2="45.5" y2="349.5" xlink:href="#Gradiente_Portal_Etec"/>
+  </defs>
+  <g>
+    <path class="st4" d="M72.8,384.9h0c0,0,0-.2,0-.3v.3Z"/>
+    <path class="st6" d="M238,149.3H90.7c-6.5,0-11.9,5.6-12,12.4,0,0,0,.2,0,.3v221.1c0,0,0,.2,0,.3.1,6.9,5.5,12.4,12,12.4h147.2c6.6,0,12-5.7,12-12.7v-221.1c0-7-5.4-12.7-12-12.7Z"/>
+    <path class="st1" d="M30.9,251.6c0,5.2.9,10.1,2.6,14.7,8.6-12.4,23-20.6,39.3-20.6h0v-36.1h0c-23.2,0-41.9,18.8-41.9,41.9Z"/>
+    <path class="st2" d="M30.9,293.5c0,5.2.9,10.1,2.6,14.7,8.6-12.4,23-20.6,39.3-20.6h0v-36.1h0c-23.2,0-41.9,18.8-41.9,41.9Z"/>
+    <path class="st0" d="M72.9,167.7h0c-23.2,0-41.9,18.8-41.9,41.9s.9,10.1,2.6,14.7c8.6-12.4,23-20.6,39.3-20.6h0s0,0,0,0v-36.1h0Z"/>
+    <path class="st3" d="M31.1,335.3c0,23.1,18.7,41.8,41.8,41.8h0v-83.6h0c-23.1,0-41.8,18.7-41.8,41.8Z"/>
+  </g>
+  <text class="st5" transform="translate(260.9 210.3)"><tspan x="0" y="0">Portal</tspan><tspan x="0" y="14.4">Etec</tspan></text>
+</svg>
