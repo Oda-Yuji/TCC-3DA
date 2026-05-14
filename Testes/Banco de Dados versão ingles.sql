@@ -1,98 +1,141 @@
-/*NOME DATABASE PLACEHOLDER*/
-create database tcc_ds;
+CREATE DATABASE tcc_ds;
 
-use tcc_ds;
+USE tcc_ds;
 
-create table course (
-id varchar(2) not null primary key,
-course_name varchar(50) not null
+CREATE TABLE course (
+    id VARCHAR(2) NOT NULL PRIMARY KEY,
+    course_name VARCHAR(50) NOT NULL
 );
 
-insert into course values ("DS", "Desenvolvimento de Sistemas");
+INSERT INTO course VALUES 
+('DS', 'Desenvolvimento de Sistemas');
 
-select * from course;
+SELECT * FROM course;
 
-create table grade (
-id varchar(3) primary key,
-name_grade varchar(30)
+CREATE TABLE grade (
+    id VARCHAR(3) PRIMARY KEY,
+    name_grade VARCHAR(30)
 );
 
-insert into grade value ("PRI", "Primeiro ano");
+INSERT INTO grade VALUES 
+('PRI', 'Primeiro ano');
 
-select * from grade;
+SELECT * FROM grade;
 
-create table students (
-id int(6) primary key auto_increment,
-full_name varchar(55) not null,
-birth_date date not null,
-cpf bigint(11),
-classe varchar(3),
-constraint fk_curso_alunos
-foreign key (classe) references classes(id)
+CREATE TABLE school_subjects (
+    id VARCHAR(3) PRIMARY KEY,
+    subject_name VARCHAR(30)
 );
 
-insert into students values (1 ,'Samuel Lirio Dayne', '2008-09-09', 12345678901, '1DA');
+INSERT INTO school_subjects VALUES 
+('MAT', 'Matematica');
 
-select * from alunos;
-desc alunos;
+SELECT * FROM school_subjects;
 
-create table school_subjects (
-id varchar(3) primary key,
-subject_name varchar(30)
+CREATE TABLE school_shift (
+    id VARCHAR(3) PRIMARY KEY,
+    shift VARCHAR(30)
 );
 
-insert into school_subjects values ('MAT', 'Matematica');
+INSERT INTO school_shift VALUES 
+('AM', 'Periodo da Manha');
 
-select * from school_subjects;
+SELECT * FROM school_shift;
 
-create table course_subjects (
-id varchar(3) primary key,
-nome_materia varchar(30),
-curso varchar(3),
-constraint fk_curso_materias_curso
-foreign key (curso) references cursos(id)
+CREATE TABLE class (
+    id VARCHAR(3) PRIMARY KEY,
+    class_name VARCHAR(60),
+    course VARCHAR(2),
+    grade VARCHAR(3),
+    shift VARCHAR(3),
+
+    CONSTRAINT fk_course_class
+        FOREIGN KEY (course) REFERENCES course(id),
+
+    CONSTRAINT fk_grade_class
+        FOREIGN KEY (grade) REFERENCES grade(id),
+
+    CONSTRAINT fk_shift_class
+        FOREIGN KEY (shift) REFERENCES school_shift(id)
 );
 
-insert into course_subjects value ('BC', 'Banco de Dados', 'DS');
-
-select * from course_subjects;
-
-create table school_shift (
-id varchar(3) primary key,
-shift varchar(30)
+INSERT INTO class VALUES 
+(
+    '1DA',
+    'Primeiro ano de Desenvolvimento de Sistemas da Manha',
+    'DS',
+    'PRI',
+    'AM'
 );
 
-insert into school_shift value ('AM', 'Periodo da Manha');
+SELECT * FROM class;
 
-create table class (
-id varchar(3) primary key,
-class varchar(60),
-course varchar(2),
-grade varchar(3),
-shift varchar(3),
-constraint fk_course_class
-foreign key (course) references course(id),
-constraint fk_grade_class
-foreign key (grade) references grade(id),
-constraint fk_shift_class
-foreign key (shift) references shift(id)
+CREATE TABLE students (
+    id INT(6) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(55) NOT NULL,
+    birth_date DATE NOT NULL,
+    cpf BIGINT,
+    class VARCHAR(3),
+
+    CONSTRAINT fk_class_students
+        FOREIGN KEY (class) REFERENCES class(id)
 );
 
-insert into class value ('1DA', 'Primeiro ano de Desenvolvimento de Sistemas da Manha', 'DS', 'PRI', 'AM');
+INSERT INTO students 
+(name, birth_date, cpf, class)
+VALUES
+('Samuel Lirio Dayne', '2008-09-09', 12345678901, '1DA');
 
-select * from class;
+SELECT * FROM students;
 
-create table professores (
-id int(6) primary key auto_increment,
-nome varchar(40),
-numero_telefone bigint(12),
-data_nascimento date,
-materia varchar(3),
-constraint fk_materia_professor
-foreign key (materia) references materias(id)
+DESC students;
+
+CREATE TABLE course_subjects (
+    id VARCHAR(3) PRIMARY KEY,
+    name_subject VARCHAR(30),
+    course VARCHAR(2),
+
+    CONSTRAINT fk_course_subjects_course
+        FOREIGN KEY (course) REFERENCES course(id)
 );
 
-insert into professores value (1 ,'Marcelo Mendez', 11910039435, '1983-11-02', 'MAT');
+INSERT INTO course_subjects VALUES 
+('BD', 'Banco de Dados', 'DS');
 
-select * from professores;
+SELECT * FROM course_subjects;
 
+CREATE TABLE teachers (
+    id INT(6) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(40),
+    phone_number BIGINT,
+    birth_date DATE,
+    subject VARCHAR(3),
+
+    CONSTRAINT fk_subject_teacher
+        FOREIGN KEY (subject) REFERENCES school_subjects(id)
+);
+
+INSERT INTO teachers
+(name, phone_number, birth_date, subject)
+VALUES
+('Marcelo Mendez', 11910039435, '1983-11-02', 'MAT');
+
+SELECT * FROM teachers;
+
+CREATE TABLE teachers_course (
+    id INT(6) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(40),
+    phone_number BIGINT,
+    birth_date DATE,
+    subject_course VARCHAR(2),
+
+    CONSTRAINT fk_course_teacher
+        FOREIGN KEY (subject_course) REFERENCES course_subjects(id)
+);
+
+INSERT INTO teachers_course
+(name, phone_number, birth_date, subject_course)
+VALUES
+('Marcelo Mendez', 11910039435, '1983-11-02', 'BD');
+
+SELECT * FROM teachers_course;
