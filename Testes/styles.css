@@ -10,14 +10,14 @@
 }
 
 :root {
-    --background-primary: hsl(76, 73%, 97%);
-    --background-primary-hover: hsl(78, 23%, 89%);
+    --background-primary: hsl(40, 50%, 97%);
+    --background-primary-hover: hsl(40, 20%, 92%);
     
-    --background-secondary: hsl(260, 69%, 96%);
-    --background-secondary-hover: hsl(262, 19%, 89%);
+    --background-secondary: hsl(240, 50%, 97%);
+    --background-secondary-hover: hsl(240, 20%, 92%);
     
-    --background-tertiary: hsl(75, 30%, 90%);
-    --background-tertiary-hover: hsl(232, 0%, 79%);
+    --background-tertiary: hsl(260, 50%, 97%);
+    --background-tertiary-hover: hsl(260, 20%, 92%);
 
     --light-border: hsl(0, 0%, 88%);
     --light-border-hover: hsl(0, 0%, 93%);
@@ -25,8 +25,8 @@
     --dark-border: hsl(0, 0%, 68%);
     --dark-border-hover: hsl(0, 0%, 73%);
 
-    --highlight: hsl(203, 85%, 54%);
-    --highlight-hover: hsl(203, 85%, 64%);
+    --highlight: hsl(200, 100%, 50%);
+    --highlight-hover: hsl(200, 100%, 60%);
 
     --text: hsl(0, 0%, 15%);
     --text-disabled: hsl(0, 0%, 35%);
@@ -66,14 +66,23 @@
 }
 
 body.dark {
-    --background-primary: hsl(226, 8%, 40%);
-    --background-primary-hover: hsl(226, 8%, 43%);
+    --background-primary: hsl(215, 15%, 35%);
+    --background-primary-hover: hsl(215, 15%, 45%);
 
-    --background-secondary: hsl(226, 8%, 45%);
-    --background-secondary-hover: hsl(226, 8%, 40%);
+    --background-secondary: hsl(215, 10%, 40%);
+    --background-secondary-hover: hsl(215, 10%, 50%);
 
-    --background-tertiary: hsl(226, 8%, 35%);
-    --background-tertiary-hover: hsl(226, 8%, 55%);
+    --background-tertiary: hsl(215, 10%, 45%);
+    --background-tertiary-hover: hsl(215, 10%, 55%);
+
+    /* --background-primary: hsl(40, 10%, 40%);
+    --background-primary-hover: hsl(40, 20%, 92%);
+    
+    --background-secondary: hsl(240, 10%, 40%);
+    --background-secondary-hover: hsl(240, 20%, 92%);
+    
+    --background-tertiary: hsl(260, 10%, 40%);
+    --background-tertiary-hover: hsl(260, 20%, 92%); */
 
     /* --background-primary: #414449;
     --background-primary-hover: hsl(226, 8%, 43%);
@@ -93,7 +102,7 @@ body.dark {
     --dark-border: hsl(0, 0%, 68%);
     --dark-border-hover: hsl(0, 0%, 73%);
 
-    --highlight: hsl(203, 85%, 54%);
+    /* --highlight: hsl(203, 85%, 54%); */
 
     --text: hsl(0, 0%, 95%);
     --text-disabled: hsl(0, 0%, 75%);
@@ -624,4 +633,32 @@ main .disabled-button {
 
 .title.show {
     display: block;
+}
+
+custom-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: var(--gap-small);
+}
+
+custom-grid div {
+    padding: var(--pad-small);
+    background-color: var(--background-primary);
+    border-radius: var(--radius-regular);
+    border: 1px solid var(--light-border);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-small);
+}
+
+.card-header .card-svg {
+    display: flex;
+    padding: var(--pad-smaller);
+    color: var(--highlight);
+    /* background-color: var(--highlight);
+    color: var(--text-inverted);
+    border-radius: var(--radius-small); */
 }
