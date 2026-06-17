@@ -636,12 +636,12 @@ main .disabled-button {
 }
 
 custom-grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
     gap: var(--gap-small);
 }
 
-custom-grid div {
+custom-grid > * {
+    flex: 1 1 200px;
     padding: var(--pad-small);
     background-color: var(--background-primary);
     border-radius: var(--radius-regular);
@@ -650,6 +650,7 @@ custom-grid div {
 
 .card-header {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: var(--gap-small);
 }
@@ -658,7 +659,51 @@ custom-grid div {
     display: flex;
     padding: var(--pad-smaller);
     color: var(--highlight);
-    /* background-color: var(--highlight);
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-evenly;
+    gap: var(--gap-small);
+    font-size: medium;
+}
+
+.card-body > * {
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    padding: var(--pad-small);
     color: var(--text-inverted);
-    border-radius: var(--radius-small); */
+    background-color: var(--highlight);
+    border-radius: var(--radius-small);
+    gap: var(--gap-smaller);
+    transition: 300ms flex-grow;
+    cursor: var(--cursor-pointer), pointer;
+}
+
+.card-body > * span {
+    font-size: smaller;
+}
+
+@media (width < 1200px) {
+    .card-body > * span {
+        max-width: 0px;
+        transition: 300ms max-width;
+        text-wrap: nowrap;
+        overflow: hidden;
+    }
+    
+    .card-body > * svg {
+        display: inline;
+        flex-shrink: 0;
+    }
+    
+    .card-body > *:hover {
+        flex: 5 1;
+    }
+    
+    .card-body > *:hover span {
+        max-width: 150px;
+    }
 }
