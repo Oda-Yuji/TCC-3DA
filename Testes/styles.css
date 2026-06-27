@@ -13,11 +13,11 @@
     --background-primary: hsl(40, 50%, 97%);
     --background-primary-hover: hsl(40, 20%, 92%);
     
-    --background-secondary: hsl(240, 50%, 97%);
-    --background-secondary-hover: hsl(240, 20%, 92%);
+    --background-secondary: hsl(240, 40%, 98%);
+    --background-secondary-hover: hsl(240, 20%, 93%);
     
-    --background-tertiary: hsl(260, 50%, 97%);
-    --background-tertiary-hover: hsl(260, 20%, 92%);
+    --background-tertiary: hsl(40, 50%, 97%);
+    --background-tertiary-hover: hsl(40, 20%, 92%);
 
     --opacity-lite: 12%;
     --opacity-hard: 20%;
@@ -28,7 +28,9 @@
     --dark-border: hsl(0, 0%, 68%);
     --dark-border-hover: hsl(0, 0%, 73%);
 
-    --gray-bg: hsl(0, 0%, 50%, 12%);
+    --bg-transparent: hsl(0, 0%, 0%);
+    --bg-transparent-black: hsl(0, 0%, 0%);
+    --bg-transparent-white: hsl(0, 0%, 0%);
 
     --accent:          hsl(200, 100%, 40%);
     --accent-bg:       hsl(200, 100%, 50%, 12%);
@@ -58,40 +60,64 @@
     --red-disabled: hsl(0, 70%, 50%);
 
     --orange:          hsl(25, 100%, 60%);
+    --orange-bg:       hsl(25, 100%, 60%, 12%);
     --orange-hover:    hsl(25, 100%, 70%);
     --orange-disabled: hsl(25, 60%, 50%);
 
     --yellow:          hsl(45, 100%, 50%);
-    --yellow-bg:       hsl(45, 100%, 60%, 12%);
+    --yellow-bg:       hsl(45, 100%, 50%, 12%);
     --yellow-hover:    hsl(45, 100%, 60%);
     --yellow-disabled: hsl(45, 60%, 50%);
 
-    --lime:          hsl(70, 100%, 60%);
-    --lime-hover:    hsl(70, 100%, 70%);
-    --lime-disabled: hsl(70, 60%, 50%);
+    --lime:          hsl(65, 100%, 45%);
+    --lime-bg:       hsl(65, 100%, 45%, 12%);
+    --lime-hover:    hsl(65, 100%, 70%);
+    --lime-disabled: hsl(65, 60%, 50%);
 
-    --green:          hsl(115, 100%, 40%);
-    --green-bg:       hsl(115, 100%, 50%, 12%);
-    --green-hover:    hsl(115, 100%, 70%);
-    --green-disabled: hsl(115, 60%, 50%);
+    --green:          hsl(120, 100%, 45%);
+    --green-bg:       hsl(120, 100%, 55%, 12%);
+    --green-hover:    hsl(120, 100%, 70%);
+    --green-disabled: hsl(120, 60%, 50%);
 
-    --turquoise:          hsl(140, 100%, 60%);
-    --turquoise-hover:    hsl(140, 100%, 70%);
-    --turquoise-disabled: hsl(140, 60%, 60%);
+    --turquoise:          hsl(160, 100%, 40%);
+    --turquoise-bg:       hsl(160, 100%, 50%, 12%);
+    --turquoise-hover:    hsl(160, 100%, 70%);
+    --turquoise-disabled: hsl(160, 60%, 50%);
 
-    --blue:          hsl(200, 100%, 40%);
-    --blue-bg:       hsl(200, 100%, 50%, 12%);
-    --blue-hover:    hsl(200, 100%, 60%);
-    --blue-disabled: hsl(200, 70%, 40%);
+    --sky:          hsl(190, 100%, 40%);
+    --sky-bg:       hsl(190, 100%, 50%, 12%);
+    --sky-hover:    hsl(190, 100%, 60%);
+    --sky-disabled: hsl(190, 70%, 40%);
 
-    --purple:          hsl(270, 100%, 40%);
-    --purple-bg:       hsl(270, 100%, 60%, 12%);
-    --purple-hover:    hsl(270, 100%, 70%);
-    --purple-disabled: hsl(270, 60%, 50%);
+    --blue:          hsl(230, 100%, 60%);
+    --blue-bg:       hsl(230, 100%, 70%, 12%);
+    --blue-hover:    hsl(230, 100%, 60%);
+    --blue-disabled: hsl(230, 70%, 40%);
 
-    --pink:          hsl(340, 100%, 60%);
-    --pink-hover:    hsl(340, 100%, 70%);
-    --pink-disabled: hsl(340, 60%, 50%);
+    --purple:          hsl(275, 100%, 40%);
+    --purple-bg:       hsl(275, 100%, 60%, 12%);
+    --purple-hover:    hsl(275, 100%, 70%);
+    --purple-disabled: hsl(275, 60%, 50%);
+
+    --magenta:          hsl(295, 100%, 50%);
+    --magenta-bg:       hsl(295, 100%, 60%, 12%);
+    --magenta-hover:    hsl(295, 100%, 70%);
+    --magenta-disabled: hsl(295, 60%, 50%);
+
+    --pink:          hsl(335, 100%, 50%);
+    --pink-bg:       hsl(335, 100%, 60%, 12%);
+    --pink-hover:    hsl(335, 100%, 70%);
+    --pink-disabled: hsl(335, 60%, 50%);
+
+    --brown:          hsl(30, 100%, 40%);
+    --brown-bg:       hsl(30, 100%, 30%, 12%);
+    --brown-hover:    hsl(30, 100%, 70%);
+    --brown-disabled: hsl(30, 60%, 50%);
+
+    --gray:          hsl(270, 8%, 40%);
+    --gray-bg:       hsl(270, 8%, 50%, 12%);
+    --gray-hover:    hsl(270, 8%, 70%);
+    --gray-disabled: hsl(270, 0%, 50%);
     
     --text: hsl(0, 0%, 15%);
     --text-disabled: hsl(0, 0%, 25%);
@@ -128,6 +154,10 @@
     --cursor-pointer: url('images/cursor/pointer.png');
     --cursor-not-allowed: url('images/cursor/not-allowed.png');
     --cursor-text: url('images/cursor/text.png');
+
+    --breakpoint-sm: 768px;
+    --breakpoint-md: 992px;
+    --breakpoint-sm: 1024px;
 }
 
 body.dark {
@@ -140,8 +170,7 @@ body.dark {
     --background-tertiary: hsl(215, 10%, 30%);
     --background-tertiary-hover: hsl(215, 10%, 35%);
 
-    --opacity-lite: 12%;
-    --opacity-hard: 20%;
+    --bg-transparent: hsl(0, 0%, 100%);
 
     --danger:          hsl(0, 100%, 80%);
     --danger-bg:       hsl(0, 100%, 60%, 12%);
@@ -153,7 +182,7 @@ body.dark {
     --valid-hover:    hsl(115, 100%, 70%);
     --valid-disabled: hsl(115, 60%, 50%);
 
-    --red:          hsl(0, 100%, 60%);
+    /* --red:          hsl(0, 100%, 60%);
     --red-bg:       hsl(0, 100%, 60%, 12%);
     --red-hover:    hsl(0, 100%, 70%);
     --red-disabled: hsl(0, 70%, 50%);
@@ -191,6 +220,16 @@ body.dark {
     --pink-hover:    hsl(340, 100%, 70%);
     --pink-disabled: hsl(340, 60%, 50%);
 
+    --brown:          hsl(30, 100%, 40%);
+    --brown-bg:       hsl(30, 100%, 30%, 12%);
+    --brown-hover:    hsl(30, 100%, 70%);
+    --brown-disabled: hsl(30, 60%, 50%);
+
+    --gray:          hsl(270, 8%, 50%);
+    --gray-bg:       hsl(270, 8%, 50%, 12%);
+    --gray-hover:    hsl(270, 8%, 70%);
+    --gray-disabled: hsl(270, 0%, 50%); */
+
     --border: hsl(240, 5%, 58%);
     --border-hover: hsl(240, 5%, 63%);
     
@@ -207,12 +246,20 @@ body.dark {
     height: 12px;
     width: 12px;
     cursor: var(--cursor-pointer), pointer;
+    border-radius: var(--radius-regular);
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--dark-border);
     border: 2px solid var(--background-secondary);
     border-radius: var(--radius-regular);
+    cursor: var(--cursor-pointer), pointer;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: var(--radius-regular);
+    background-color: hsl(from var(--bg-transparent-black) h s l / 0.1);
+    border: 2px solid var(--background-secondary);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -233,32 +280,18 @@ body.dark {
 
 body {
     cursor: var(--cursor-default), auto;
-    min-height: 100dvh;
+    height: 100dvh;
     background-color: var(--background-secondary);
     color: var(--text);
     display: grid;
-    gap: 0 var(--gap-regular);
+    gap: var(--gap-regular);
     padding: var(--pad-regular);
+    grid-template-rows: 72px 1fr;
     grid-template-columns: auto 1fr;
-    grid-template-areas:
-    "header header"
-    "side main";
 }
 
 header {
-    grid-area: header;
-}
-
-aside {
-    grid-area: side;
-}
-
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
+    grid-column: span 2;
 }
 
 ul {
@@ -288,6 +321,16 @@ a {
     cursor: var(--cursor-pointer), pointer;
 }
 
+svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::backdrop {
+    background-color: hsl(from var(--bg-transparent-black) h s l / 0.5);
+}
+
 body {
     background-color: var(--background-primary);
 }
@@ -295,7 +338,6 @@ body {
 header {
     position: sticky;
     top: 0;
-    height: 100px;
     padding: var(--pad-regular);
     display: flex;
     justify-content: space-between;
@@ -328,6 +370,10 @@ header .buttons button:hover {
 header .buttons svg {
     width: 32px;
     height: 32px;
+}
+
+header .user .username {
+    font-weight: var(--font-medium);
 }
 
 .toggle-theme svg:last-child {
@@ -410,11 +456,9 @@ aside {
     padding: var(--pad-regular);
     background-color: var(--background-primary);
     color: var(--text);
-    font-weight: var(--font-medium);
     position: sticky;
-    top: 124px;
-    height: calc(100dvh - 124px);
-    width: 250px;
+    height: 100%;
+    width: 216px;
     transition: 300ms padding, 300ms width;
     align-self: start;
     overflow: hidden;
@@ -424,25 +468,34 @@ aside {
     border: 1px solid var(--border);
 }
 
+aside a,
+.links-popover a {
+    font-weight: var(--font-medium);
+}
+
 aside.hidden {
-    /* width: calc(var(--pad-regular) * 2 + var(--pad-small) * 2 + 2px + 24px); */
     width: 66px;
     padding: var(--pad-regular) var(--pad-small);
 }
 
-aside .toggle-sidebar svg:last-of-type {
+aside .toggle-sidebar svg:nth-of-type(3) {
     display: none;
 }
 
-aside.hidden .toggle-sidebar svg:first-of-type {
+aside .toggle-sidebar svg:nth-of-type(2) {
     display: none;
 }
 
-aside.hidden .toggle-sidebar svg:last-of-type {
+aside.hidden .toggle-sidebar svg:nth-of-type(1) {
+    display: none;
+}
+
+aside.hidden .toggle-sidebar svg:nth-of-type(2) {
     display: inline;
 }
 
-aside .toggle-sidebar {
+aside .toggle-sidebar,
+.links-popover .toggle-sidebar {
     display: flex;
     padding: var(--pad-regular);
     gap: var(--gap-regular);
@@ -456,25 +509,30 @@ aside .toggle-sidebar {
     background-color: var(--background-primary);
 }
 
-aside .toggle-sidebar span {
+aside .toggle-sidebar span,
+.links-popover .toggle-sidebar span {
     flex-grow: 1;
 }
 
-aside span {
+aside span,
+.links-popover span {
     line-height: 24px;
 }
 
-aside .toggle-sidebar:hover {
+aside .toggle-sidebar:hover,
+.links-popover .toggle-sidebar:hover {
     background-color: var(--background-primary-hover);
 }
 
-aside ul {
+aside ul,
+.links-popover ul {
     display: flex;
     flex-direction: column;
     gap: var(--gap-smaller);
 }
 
-aside a {
+aside a,
+.links-popover a {
     position: relative;
     overflow: hidden;
     display: flex;
@@ -485,63 +543,89 @@ aside a {
 }
 
 aside a:hover,
-aside a.active {
+aside a.active,
+.links-popover a:hover,
+.links-popover a.active {
     background-color: var(--background-secondary-hover);
 }
 
-aside a.active {
+aside a.active,
+.links-popover a.active {
     color: var(--accent);
 }
 
-aside svg {
+aside svg,
+.links-popover svg {
     flex-shrink: 0;
 }
 
-aside .sidebar-text {
+aside .sidebar-text,
+.links-popover .sidebar-text {
     flex-grow: 1;
 }
 
-aside .notify {
+aside .notify,
+.links-popover .notify {
     position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(calc(-100% - var(--pad-regular)), -50%);
+    z-index: 2;
+    top: 4px;
+    left: 4px;
+    transform: translateY(0%);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20px;
-    width: 20px;
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--background-secondary);
     border-radius: 50%;
     font-weight: var(--font-semibold);
-    font-size: 13px;
+    font-size: 12px;
     background-color: var(--notify);
     color: var(--text-white);
-    transition: 300ms top, 300ms right, 300ms left;
 }
 
-.active .notify {
-    background-color: inherit;
+.links-popover:popover-open {
+    display: none;
+    flex-direction: column;
+    gap: var(--gap-large);
+    padding: var(--pad-regular);
+    background-color: var(--background-primary);
     color: var(--text);
+    height: 100%;
+    width: 216px;
+    overflow: hidden;
+    text-wrap: nowrap;
+    background-color: var(--background-secondary);
+    border: 1px solid var(--border);
+    border-radius: unset;
+    border-top-left-radius: var(--radius-regular);
+    border-bottom-left-radius: var(--radius-regular);
 }
 
-aside.hidden .notify {
-    top: 4px;
-    right: unset;
-    left: 4px;
-    transform: translateY(0%);
+.links-popover .toggle-sidebar svg:nth-of-type(3) {
+    display: flex;
+}
+
+.links-popover .toggle-sidebar svg:nth-of-type(1),
+.links-popover .toggle-sidebar svg:nth-of-type(2) {
+    display: none;
 }
 
 main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap-regular);
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: auto;
     border: 1px solid var(--border);
     border-radius: var(--radius-large);
     background-color: var(--background-secondary);
-    padding: var(--pad-large) calc(var(--pad-large) - 12px) var(--pad-large) var(--pad-large);
-    height: calc(100dvh - 124px);
-    overflow-y: scroll;
-    overflow-x: auto;
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap-regular);
+    padding: var(--pad-large);
+}
+
+main > * {
+    width: 100%;
 }
 
 main .show-colors,
@@ -553,7 +637,7 @@ main .show-elements {
 }
 
 main .show-colors .button,
-main ,.show-elements .button {
+main .show-elements .button {
     display: flex;
     gap: var(--gap-regular);
 }
@@ -728,16 +812,79 @@ main .disabled-button {
     display: block;
 }
 
-/* custom-grid {
+main > h1 {
+    font-size: larger;
+    font-weight: var(--font-semibold);
+}
+
+main > h2 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-large);
+    font-size: large;
+    font-weight: var(--font-medium);
+}
+
+main > h2 > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: var(--gap-small);
-    flex-wrap: wrap;
+    padding: var(--pad-smaller);
+    border-radius: var(--radius-small);
+    background-color: var(--background-primary);
+    border: 1px solid var(--border);
+}
+
+main > h2 > a > span {
+    font-size: medium;
+}
+
+main > h2 > a:hover {
+    background-color: var(--background-primary-hover);
+}
+
+main > h2 > a:hover > span {
+    text-decoration: 2px solid var(--blue) underline;
+}
+
+main > h2 > a > svg {
+    width: 16px;
+    height: 16px;
+    stroke-width: 3px;
+}
+
+main > h2 > span:last-of-type {
+    flex-grow: 1;
+    height: var(--pad-smaller);
+    border-radius: var(--radius-smaller);
+    background-color: hsl(from var(--bg-transparent) h s l / 0.2);
+}
+
+/* custom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
+    gap: var(--gap-small);
 } */
 
 custom-grid {
+    --cols: 3;
+    --min-width: 420px;
+
     display: grid;
-    grid-template-columns: 3fr 3fr 2fr;
     gap: var(--gap-small);
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            clamp(
+                calc((100% - var(--gap-small) * (var(--cols) - 1)) / var(--cols)),
+                var(--min-width),
+                100%
+            ),
+            1fr
+        )
+    );
 }
 
 .card {
@@ -798,32 +945,46 @@ custom-grid {
 
 .card-header .card-name {
     flex-grow: 1;
-    text-wrap: nowrap;
     justify-content: left;
     font-weight: var(--font-medium);
 }
 
-.card-header .card-link,
-.card-header .card-options {
+.card-header .card-link {
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
     justify-content: center;
     align-items: center;
     padding: var(--pad-regular);
-}
-
-.card-header .card-link {
-    display: none;
-}
-
-.card-header .card-options:hover {
-    border-radius: 50%;
-    background-color: var(--background-secondary-hover);
+    background-color: var(--background-primary);
 }
 
 .card:hover .card-link {
     display: flex;
+}
+
+.card-header .card-open {
+    display: none;
+    position: absolute;
+    top: calc(0px - var(--pad-small));
+    right: calc(0px - var(--pad-small));
+    bottom: calc(0px - var(--pad-small));
+    left: calc(0px - var(--pad-small));
+    justify-content: end;
+    align-items: start;
+    border-radius: var(--radius-regular);
+    padding: var(--pad-small);
+}
+
+.card-header .card-open svg {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--pad-regular);
+    transition: transform 300ms ease-in-out;
 }
 
 .card-title > * {
@@ -854,11 +1015,14 @@ custom-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--gap-small);
+    height: 100%;
 }
 
 .card-info > * {
     display: grid;
-    grid-template-columns: 48px 4fr;
+    grid-template-columns: 40px 4fr;
+    height: 100%;
+    column-gap: var(--pad-smaller);
     padding: var(--pad-smaller);
     border-radius: var(--radius-regular);
 }
@@ -881,6 +1045,10 @@ custom-grid {
 
 .card-info > * > *:first-child {
     display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 20px;
+    height: 20px;
     grid-row: span 2;
     justify-content: center;
     align-items: center;
@@ -905,7 +1073,8 @@ custom-grid {
 .card-info > * > *:nth-child(2) {
     display: flex;
     justify-content: left;
-    align-items: center;
+    align-items: end;
+    text-wrap: nowrap;
     font-size: smaller;
     color: var(--text-disabled);
 }
@@ -914,7 +1083,7 @@ custom-grid {
     display: flex;
     flex-shrink: 1;
     justify-content: left;
-    align-items: center;
+    align-items: start;
     font-size: medium;
     font-weight: var(--font-medium);
     color: var(--text);
@@ -937,7 +1106,9 @@ custom-grid {
 }
 
 .calendar-item {
+    display: flex;
     width: 100%;
+    gap: var(--gap-smaller);
     padding: var(--pad-smaller);
     border-left: 2px solid var(--green);
     background-color: var(--green-bg);
@@ -949,6 +1120,10 @@ custom-grid {
 
 .calendar-item > *:first-child {
     font-weight: var(--font-medium);
+}
+
+.calendar-item .calendar-date {
+    width: 60px;
 }
 
 .card-actions {
@@ -971,5 +1146,314 @@ custom-grid {
 .card-actions > *:last-child {
     padding: var(--pad-regular);
     border-radius: var(--radius-regular);
-    background-color: var(--background-primary-hover);
+    background-color: var(--background-tertiary);
+}
+
+.section-shifts {
+    position: relative;
+}
+
+custom-carousel {
+    --cols: 6;
+    --min-width: 200px;
+
+    position: relative;
+    display: grid;
+    gap: var(--gap-small);
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            clamp(
+                calc((100% - var(--gap-small) * (var(--cols) - 1)) / var(--cols)),
+                var(--min-width),
+                100%
+            ),
+            1fr
+        )
+    );
+
+    max-height: 260px;
+    overflow: auto;
+}
+
+custom-carousel::-webkit-scrollbar-button {
+    display: none;
+}
+
+.fade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-weight: var(--font-medium);
+    font-size: medium;
+    background: linear-gradient(to bottom, transparent 0%, var(--background-primary) 85%);
+    pointer-events: none;
+    transition: 300ms opacity;
+}
+
+.shift {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-small);
+    padding: var(--pad-small);
+    background-color: var(--background-primary);
+    border-radius: var(--radius-regular);
+    border: 1px solid var(--border)
+}
+
+.shift-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--gap-small);
+    width: 64px;
+    height: 64px;
+}
+
+.shift-icon > * {
+    width: 32px;
+    height: 32px;
+}
+
+.shift-math .shift-icon {
+    background-color: var(--sky-bg);
+    color: var(--sky);
+}
+.shift-math:hover .shift-name {
+    text-decoration: 2px solid var(--sky) underline;
+}
+
+.shift-portuguese .shift-icon {
+    background-color: var(--orange-bg);
+    color: var(--orange);
+}
+.shift-portuguese:hover .shift-name {
+    text-decoration: 2px solid var(--orange) underline;
+}
+
+.shift-philosophy .shift-icon {
+    background-color: var(--pink-bg);
+    color: var(--pink);
+}
+.shift-philosophy:hover .shift-name {
+    text-decoration: 2px solid var(--pink) underline;
+}
+
+.shift-english .shift-icon {
+    background-color: var(--orange-bg);
+    color: var(--orange);
+}
+.shift-english:hover .shift-name {
+    text-decoration: 2px solid var(--orange) underline;
+}
+
+.shift-sociology .shift-icon {
+    background-color: var(--magenta-bg);
+    color: var(--magenta);
+}
+.shift-sociology:hover .shift-name {
+    text-decoration: 2px solid var(--magenta) underline;
+}
+
+.shift-geography .shift-icon {
+    background-color: var(--lime-bg);
+    color: var(--lime);
+}
+.shift-geography:hover .shift-name {
+    text-decoration: 2px solid var(--lime) underline;
+}
+
+.shift-history .shift-icon {
+    background-color: var(--yellow-bg);
+    color: var(--yellow);
+}
+.shift-history:hover .shift-name {
+    text-decoration: 2px solid var(--yellow) underline;
+}
+
+.shift-art .shift-icon {
+    background-color: var(--purple-bg);
+    color: var(--purple);
+}
+.shift-art:hover .shift-name {
+    text-decoration: 2px solid var(--purple) underline;
+}
+
+.shift-biology .shift-icon {
+    background-color: var(--green-bg);
+    color: var(--green);
+}
+.shift-biology:hover .shift-name {
+    text-decoration: 2px solid var(--green) underline;
+}
+
+.shift-chemistry .shift-icon {
+    background-color: var(--turquoise-bg);
+    color: var(--turquoise);
+}
+.shift-chemistry:hover .shift-name {
+    text-decoration: 2px solid var(--turquoise) underline;
+}
+
+.shift-physics .shift-icon {
+    background-color: var(--blue-bg);
+    color: var(--blue);
+}
+.shift-physics:hover .shift-name {
+    text-decoration: 2px solid var(--blue) underline;
+}
+
+.shift-pe .shift-icon {
+    background-color: var(--red-bg);
+    color: var(--red);
+}
+.shift-pe:hover .shift-name {
+    text-decoration: 2px solid var(--red) underline;
+}
+
+.shift-ethics .shift-icon {
+    background-color: var(--brown-bg);
+    color: var(--brown);
+}
+.shift-ethics:hover .shift-name {
+    text-decoration: 2px solid var(--brown) underline;
+}
+
+.shift-name {
+    font-weight: var(--font-medium);
+}
+
+.shift-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.shift-class {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.shift-class > span {
+    font-size: medium;
+}
+
+.shift-status {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: var(--gap-smaller);
+    border-radius: var(--radius-regular);
+}
+
+.shift-status > svg {
+    width: 16px;
+    height: 16px;
+    stroke-width: 3px;
+}
+
+.shift-status > span {
+    font-size: medium;
+    font-weight: var(--font-medium);
+}
+
+@media (width < 768px) {
+    main {
+        padding: var(--pad-small);
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .card.active > * {
+        display: none;
+    }
+
+    .card.active > *:first-of-type {
+        display: flex;
+    }
+
+    .card .card-open {
+        display: flex;
+    }
+
+    .card:hover .card-link {
+        display: none;
+    }
+
+    .card-header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .card.active .card-open svg {
+        transform: rotate(-180deg);
+    }
+
+    .card-info {
+        grid-template-columns: 1fr;
+    }
+
+    .card-info .card-double {
+        grid-column: unset;
+    }
+
+    .card-info div:last-child span {
+        text-wrap: wrap;
+    }
+
+    custom-carousel {
+        max-height: 400px;
+    }
+}
+
+@media (width < 1024px) {
+    body {
+        grid-template-columns: unset;
+        grid-template-rows: 72px auto 1fr;
+        padding: var(--gap-small);
+        gap: var(--gap-small);
+    }
+
+    header {
+        grid-column: unset;
+        padding: var(--gap-small);
+    }
+
+    header figure {
+        display: none;
+    }
+
+    aside {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        padding: var(--gap-small);
+    }
+
+    aside.hidden {
+        width: 100%;
+        padding: var(--gap-small);
+    }
+    
+    aside .links {
+        display: none;
+    }
+
+    .links-popover:popover-open {
+        position: fixed;
+        top: 0;
+        left: unset;
+        right: 0;
+        display: flex;
+    }
 }
